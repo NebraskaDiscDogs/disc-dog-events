@@ -10,15 +10,24 @@ gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
+gem 'bcrypt', '~> 3.1.7'
+gem 'haml-rails', '~> 2.0'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
-# gem 'bcrypt', '~> 3.1.7'
+
+gem "dry-monads"
+gem "dry-schema", "1.4.3"
+gem "dry-struct", "1.1.1"
+gem "dry-types", "1.2.2"
+gem "dry-validation", "1.4.2"
+
+gem "virtus", "~> 1"
 
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-rails'
 end
 
 group :development do

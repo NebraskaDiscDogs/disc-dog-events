@@ -1,0 +1,5 @@
+- if errors.present?
+	%div.form_error
+		%ul
+			- errors.full_messages.each do |msg|
+				%li= "Error: " + msg
